@@ -155,7 +155,7 @@ if [ $install_required = true ]; then
 
   if [ -f "${release_filename}" ]; then
     log "Installing Foundry Virtual Tabletop ${FOUNDRY_VERSION}"
-    unzip -q "${release_filename}" 'resources/*'
+    unzip -qn "${release_filename}" 'resources/*'
     log_debug "Installation completed."
   else
     log_error "Unable to install Foundry Virtual Tabletop!"
